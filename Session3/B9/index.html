@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Họ tên:</label>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Ngày sinh:</label>
+                </td>
+                <td>
+                    <input type="date" name="dob" id="dob">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone-number">Số điện thoại:</label>
+                </td>
+                <td>
+                    <input type="number" name="phone-number" id="phone-number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="addr">Địa chỉ:</label>
+                </td>
+                <td>
+                    <textarea name="addr" id="addr" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="role">Vai trò:</label>
+                </td>
+                <td>
+                    <select name="role" id="role">
+                        <option value="student">Học sinh</option>
+                        <option value="teacher">Giáo viên</option>
+                        <option value="staff">Nhân viên</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hobby">Sở thích:</label>
+                </td>
+                <td>
+                    <input type="text" name="hobby" id="hobby">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="skill">Kỹ năng:</label>
+                </td>
+                <td>
+                    <textarea name="skill" id="skill" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="freetime">Thời gian rảnh:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="freetime" id="freetime" value="morning">Buổi sáng
+                    <input type="checkbox" name="freetime" id="freetime" value="afternoon">Buổi chiều
+                    <input type="checkbox" name="freetime" id="freetime" value="evening">Buổi tối
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="reason">Lý do tham gia nhóm:</label>
+                </td>
+                <td>
+                    <textarea name="reason" id="reason" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Màu yêu thích</label>
+                </td>
+                <td>
+                    <input type="color" name="color" id="color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="get-news">Nhận bản tin:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="get-news" id="get-news" value="yes">Có
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="method">Nhận thông báo qua:</label>
+                </td>
+                <td>
+                    <input type="radio" name="method" id="method" value="email">Email
+                    <input type="radio" name="method" id="method" value="sms">SMS
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Đăng kí thành viên</button>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
