@@ -1,0 +1,18 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{ 
+    color:#0b5ea0;
+    font-size: 1.5em;
+    font-weight:500;
+}
+
+.board{
+    border-left: 0.75em solid #deca4e;
+    padding-left: 0.5em;
+}
+
+.code{
+    font-family: 'Courier New', Courier, monospace;
+}

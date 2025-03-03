@@ -94,5 +94,24 @@
             <td><img src="American Ringtail.jpg"></td>
         </tr>
     </table>
+    <form>
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label for="type">
+                <input type="radio" name="indoor-outdoor" id="type" value="indoor"> Indoor
+                <input type="radio" name="indoor-outdoor" id="type" value="outdoor"> Outdoor
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <label for="personality">
+                <input type="checkbox" name="personality" id="personality" value="loving"> Loving
+                <input type="checkbox" name="personality" id="personality" value="lazy"> Lazy
+                <input type="checkbox" name="personality" id="personality" value="energertic"> Energertic
+            </label>
+        </fieldset>
+        <input type="text" placeholder="cat photo URL">
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
