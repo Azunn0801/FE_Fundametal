@@ -1,0 +1,27 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px 20px;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.title {
+    color: #a4241e;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+.description {
+    color: #251952;
+    font-size: 16px;
+}

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.plan-card {
+    background: white;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+}
+.plan-header {
+    background: #d32f2f;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.hot-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 50px;
+}
+.plan-details {
+    padding: 15px;
+}
+.plan-details p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+.highlight {
+    color: #f57c00;
+    font-weight: bold;
+}
+.register-button, .details-button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.register-button {
+    background: #d32f2f;
+    color: white;
+    font-size: 16px;
+}
+.details-button {
+    background: #fff;
+    color: #d32f2f;
+    border: 1px solid #d32f2f;
+}

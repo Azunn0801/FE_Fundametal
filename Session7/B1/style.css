@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+h1 {
+    color: #140754;
+}
+h2 {
+    color: #140754;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    text-align: left;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 30px;
+    background: url('https://rikkei.edu.vn/wp-content/themes/hoabinhweb-v3-154-child-theme/image/icon-check.png') no-repeat left center;
+    background-size: 20px;
+}
+.buttons {
+    margin-top: 20px;
+}
+.button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+.red-button {
+    background-color: #c0392b;
+    color: white;
+}
+.blue-button {
+    background-color: #ecf0f1;
+    color: black;
+}
