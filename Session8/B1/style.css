@@ -1,0 +1,46 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    border-collapse: collapse;
+    cellspacing: 0 20px;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0;
+    text-align: center;
+    border: #f1f1f1 1px solid;
+}
+
+date{
+    font-family: garamond;
+}
+
+title{
+    color: #262935;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 780;
+    padding: 50px 190px;
+    display: block;
+}
+
+.btn{
+    border: #4f555b 2px solid;
+    color: #4f555b;
+    padding: 18px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #4f555b;
+    font-weight: 500;
+    padding: 50px 120px;
+    letter-spacing: 1px;
+}

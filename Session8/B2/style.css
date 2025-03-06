@@ -1,0 +1,41 @@
+body{
+    background-color: #524561;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #524561;
+    color: white;
+}
+
+td{
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #524561;
+    color: white; /* Optional: to make the text color white for better contrast */
+}
+
+button{
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #524561;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}

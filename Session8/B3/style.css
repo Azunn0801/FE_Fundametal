@@ -1,0 +1,44 @@
+body{
+    font-family: 'Roboto';
+    color: #5b464a;
+}
+
+.header>hr{
+    border: none;
+    height: 3px;
+    background-color: #f56e6e;
+}
+
+title{
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.container{
+    display: flex;
+    padding: 30px 20px 15px 0;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.btn{
+    color: #f8817a;
+    background-color: white;
+    border: #f8817a 2px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.content{
+    padding: 0 50px;
+}
+
