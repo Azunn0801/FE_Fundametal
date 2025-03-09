@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100wh;
+    height: 100vh;
+}
+
+p {
+    color: white;
+    background-color: #3498db;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
