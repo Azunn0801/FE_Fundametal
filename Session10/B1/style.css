@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+h1  {
+    margin-left: 3em;
+}
+
+div>nav {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-right: 5em;
+}
+
+nav>a   {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    color: #8b8b8b;
+}
+
+input  {
+    margin-right: 3em;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #8d939e;
+    color: white;
+    font-size: 16px;
+}
+
