@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #8b1e56;
+    color: white;
+    padding: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    background: #d14983;
+    padding: 10px;
+}
+
+/* Main Content */
+.main, .aside {
+    background: #a53d5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.column {
+    background: #d14983;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 100%;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "columns columns";
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .columns {
+        grid-area: columns;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .column {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "columns";
+    }
+
+    .header, .main, .aside, .columns {
+        width: 100%;
+    }
+
+    .columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 1 1 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+}

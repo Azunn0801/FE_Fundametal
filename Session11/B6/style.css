@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    gap: 10px;
+}
+
+/* Các phần tử */
+.header {
+    background: #a3c9f1;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.content {
+    background: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.signup {
+    background: #c9e2ff;
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature1 { background: #f8cc82; }
+.feature2 { background: #c2b3f3; }
+.feature3 { background: #f29c9c; }
+
+/* 📲 Mobile (< 768px) */
+@media (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* 📱 Tablet (768px → 1200px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "content"
+            "signup feature1"
+            "feature2 feature3";
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .signup {
+        grid-area: signup;
+    }
+
+    .feature1 {
+        grid-area: feature1;
+    }
+
+    .feature2 {
+        grid-area: feature2;
+    }
+
+    .feature3 {
+        grid-area: feature3;
+    }
+}
+
+/* 💻 Desktop (≥ 1200px) */
+@media (min-width: 1200px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "feature1 feature2 feature3"
+            "signup signup signup"
+            "content content content";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .header {
+        grid-area: header;
+    }
+
+    .feature1 {
+        grid-area: feature1;
+    }
+
+    .feature2 {
+        grid-area: feature2;
+    }
+
+    .feature3 {
+        grid-area: feature3;
+    }
+
+    .signup {
+        grid-area: signup;
+    }
+
+    .content {
+        grid-area: content;
+    }
+}
