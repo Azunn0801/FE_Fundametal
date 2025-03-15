@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <style>
+        form {
+            width: 30%;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .container {
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .container2 {
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Payments</h2>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="creditCard">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Credit Card
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="debitCard" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Debit Card
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="Paypal" checked>
+            <label class="form-check-label" for="flexRadioDefault3">
+              Paypal
+            </label>
+          </div>
+        <div class="container">
+            <div class="mb-3" style="width: 45%;">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="namehelp">
+                <div id="namehelp" class="form-text">Full name as displayed on card</div>
+              </div>
+              <div class="mb-3" style="width: 45%;">
+                <label for="exampleInputPassword1" class="form-label">Credit card number</label>
+                <input type="text" class="form-control" id="CardNumber">
+              </div>
+        </div>
+        <div class="container2">
+            <div class="mb-3" style="margin-right: 50px; width: 20%;">
+                <label for="exampleInputEmail1" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="Expiry">
+              </div>
+              <div class="mb-3" style="width: 20%;">
+                <label for="exampleInputPassword1" class="form-label">CVV</label>
+                <input type="password" class="form-control" id="CVV">
+              </div>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Continue to checkout</button>
+      </form>
+</body>
+</html>
