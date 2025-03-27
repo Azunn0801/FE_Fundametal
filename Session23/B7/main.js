@@ -11,12 +11,10 @@ if (isNaN(n) || n < 0) {
         arr.push(input);
     }
 
-    let uniqueArr = [...new Set(arr)];
-
     if (uniqueArr.length < 2) {
         console.log("Không thể tìm số lớn thứ 2");
     } else {
-        uniqueArr.sort((a, b) => b - a);
-        console.log("Số lớn thứ 2 là:", uniqueArr[1]);
+        arr.sort((a, b) => b - a);
+        console.log("Số lớn thứ 2 là:", arr[1]);
     }
 }
