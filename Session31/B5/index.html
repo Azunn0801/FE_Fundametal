@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Danh sách nhân viên</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<h2>Danh sách nhân viên</h2>
+
+<table id="employeeTable">
+  <thead>
+    <tr>
+      <th>STT</th>
+      <th>Tên</th>
+      <th>Tuổi</th>
+      <th>Địa chỉ</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h2>Thêm nhân viên mới</h2>
+
+<form id="employeeForm">
+  <label for="name">Tên:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+
+  <label for="age">Tuổi:</label><br>
+  <input type="number" id="age" name="age"><br><br>
+
+  <label for="address">Địa chỉ:</label><br>
+  <input type="text" id="address" name="address"><br><br>
+
+  <button type="submit">Thêm nhân viên</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
