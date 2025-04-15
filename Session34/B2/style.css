@@ -1,0 +1,32 @@
+body {
+    background-color: #efefef;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    padding: 50px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    gap: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.table-secondary {
+    background-color: #f4f4f4;
+}
+
+table tr {
+    border-collapse: collapse;
+    width: 100%;
+    align-items: center;
+}

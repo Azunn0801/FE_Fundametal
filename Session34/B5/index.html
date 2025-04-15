@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Danh sách nhân viên Rikkei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Danh sách nhân viên Rikkei</h2>
+
+  <input type="text" id="name" placeholder="tên nhân viên">
+  <input type="text" id="position" placeholder="chức vụ">
+  <button onclick="addEmployee()">thêm nhân viên</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Chức vụ</th>
+      </tr>
+    </thead>
+    <tbody id="employeeList">
+    </tbody>
+  </table>
+
+  <script src="main.js"></script>
+</body>
+</html>

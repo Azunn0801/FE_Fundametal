@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Quản lý giấc mơ</h1>
+
+    <div class="header">
+        <form onsubmit="addDream(event)">
+            <input type="text" name="target" id="target" placeholder="Nhập mục tiêu">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Tùy chọn</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Chọn mức độ quan trọng.</option>
+                    <option value="1">Thấp</option>
+                    <option value="2">Vừa</option>
+                    <option value="3">Cao</option>
+                </select>
+            </div>
+            <button class="btn btn-primary">Thêm mới</button>
+        </form>
+
+        <label class="input-group-text" for="filter">Lọc</label>
+        <select class="form-select" id="filter">
+            <option selected>Chọn...</option>
+            <option class="filter-option" value="1">Mục tiêu đã hoàn thành</option>
+            <option class="filter-option" value="2">Mục tiêu chưa hoàn thành</option>
+            <option class="filter-option" value="0">Hiển thị tất cả</option>
+        </select>
+    </div>
+
+    <div class="display-box">
+        <h2>Danh sách mục tiêu</h2>
+        <table id="dreamList">
+            <thead>
+                <tr>
+                    <th scope="col">Nội dung</th>
+                    <th scope="col">Mức độ quan trọng</th>
+                    <th>Trạng thái</th>
+                    <th scope="col">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>${dreams[i].dreamName}</td>
+                    <td>${dreams[i].level}</td>
+                    <td>${dreams[i].status ? "Đã hoàn thành" : "Chưa hoàn thành"}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button>
+                        <button class="btn btn-warning" onclick="editDream(${i})">Sửa</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bạn có chắc chắn muốn xóa mục tiêu này không?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+                    <button type="button" class="btn btn-primary" onclick="deleteDream">Có</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
