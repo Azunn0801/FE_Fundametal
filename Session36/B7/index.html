@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <script>
+        if (!(localStorage.getItem("verify") === "true" || sessionStorage.getItem("verify") === "true")) {
+            window.location.href = "auth/login.html";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const username = localStorage.getItem("username") || sessionStorage.getItem("username");
+            if (username) {
+                document.querySelector("h1").innerText = `Xin chào, ${username}! 👋`;
+            }
+        });
+    </script>
+    <div class="container">
+        <h1></h1>
+        <p>Chào mừng bạn đến với hệ thống mini!</p>
+        <button class="btn btn-primary" onclick="logout()">Đăng Xuất</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
